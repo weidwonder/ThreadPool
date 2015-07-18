@@ -1,5 +1,5 @@
 # Introduction
-This is a block thread pool.
+This is a full-block-thread pool.
 
 # API
 
@@ -16,6 +16,7 @@ Very easy.Only three function.
 `process(func, args=None)`
 
 > Put tasks into pool by using this function. The `args` will be passed to func.
+
 > If the pool has been closed, this function will raise `PoolClosedError`
 
 `close()`
@@ -25,4 +26,5 @@ Very easy.Only three function.
 `join()`
 
 > Make the thread which handle `join()` wait till pool finish all tasks.
+
 > Attition! The pool must be closed before `join()`, otherwise `JoinWithoutClosedError` will be raised.
