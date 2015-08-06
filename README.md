@@ -7,11 +7,11 @@ This is a full-block-thread pool.
 
 `thread_pool.ThreadPool(thread_num=cpu_count)`
 
-> Create thread pool by this. `thread_num` represent the max thread number this pool can process at same time, it equals your pc cpu count default.
+> Create thread pool by this. `thread_num` represent the max thread number this pool can process at same time, it equals your pc cpu count by default.
 
 ### functions
 
-Very easy.Only three function.
+Very easy.Only three functions.
 
 `process(func, args=None)`
 
